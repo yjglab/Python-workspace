@@ -79,3 +79,27 @@ class C(A, B): # B, A로 상속 순서를 바꾸면 밑에서 # '나는 B다' �
         super().__init__()
 
 alphabet = C() # 나는 A다
+
+
+#--
+
+class House:
+    def __init__(self, location, houseType, dealType, price, completionYear):
+        self.location = location
+        self.houseType = houseType
+        self.dealType = dealType
+        self.price = price
+        self.completionYear = completionYear
+
+    def showDetail(self):
+        print(self.location, self.houseType, self.dealType, self.price, self.completionYear)
+
+houses = []
+house1 = House("강남", "아파트", "매매", "10억", "2010년")
+house2 = House("이태원", "빌라", "전세", "5억", "2007년")
+houses.append(house1)
+houses.append(house2)
+
+print("총 {0}대의 매물이 있습니다".format(len(houses)))
+for house in houses:   
+    house.showDetail()
