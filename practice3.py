@@ -103,8 +103,8 @@ with open("study.txt", "r", encoding="utf8") as study_file: # 읽기
 #--
 
 
-for i in range(1, 11):
-    with open(str(i) + "주차.txt", "w", encoding="utf8") as reportFile:
+for i in range(1, 4):
+    with open(str(i) + "주차주간보고.txt", "w", encoding="utf8") as reportFile:
         reportFile.write("= {0}주차 주간 보고".format(i))
         reportFile.write("\n부서 : ")
         reportFile.write("\n이름 : ")
