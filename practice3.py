@@ -25,7 +25,7 @@ print("{0:.3f}".format(5/3)) # 1.667
 # 소수점 특정 자리 수 까지만 표시. # 소수점 3자리에서 반올림함.
 
 
-# 파일 입출력 
+### 파일 입출력 
 score_file = open("score.txt", "w", encoding="utf8") # w: write(쓰기용도)
 print("수학 : 0", file=score_file)
 print("영어 : 50", file=score_file)

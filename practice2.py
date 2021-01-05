@@ -1,4 +1,4 @@
-# for
+### for
 
 for waitingNum in [0, 1, 2, 3, 4]:
     print("대기번호 : {0}".format(waitingNum)) # 0부터 4까지 값을 넣은 반복
@@ -10,7 +10,7 @@ starbucks = ["아이언맨", "토르", "그루트"]
 for customer in starbucks:
     print("{0}님, 커피가 준비되었습니다".format(customer))
 
-# while : while 내 조건이 만족할 때까지 반복
+### while : while 내 조건이 만족할 때까지 반복
 customer = "토르"
 index = 5
 while index >= 1:
@@ -37,7 +37,7 @@ while person != customer :
 '''
 
 
-# continue 와 break
+### continue 와 break
 absent = [2, 5]
 noBook = [7]
 for student in range(1, 11):
@@ -120,7 +120,7 @@ def profile2(name, age=17, mainLanguage="Python"): # age와 mainLanguage 값을 
 profile2("제임스")
 
 
-# 키워드 값을 통한 함수 호출
+### 키워드 값을 통한 함수 호출
 
 def profile3(name, age, mainLanguage):
     print(name, age, mainLanguage)
@@ -128,14 +128,14 @@ def profile3(name, age, mainLanguage):
 profile3(name="병진", mainLanguage="자바스크립트", age=25) # 매개변수값을 키워드를 이용해 호출. 순서도 상관없음.
 
 
-# 가변인자를 통한 함수 호출
+### 가변인자를 통한 함수 호출
   # 가변인자를 쓰지 않을 때 -
 def profile4(name, age, lang1, lang2, lang3):
     print("이름: {0}\t나이: {1}\t".format(name, age), end=" ") # end=" " 를 입력하면 줄바꿈이 되지 않음. 
     print(lang1, lang2, lang3)
 
 profile4("젬스", 20, "python", "java", "c++") # 이름: 젬스      나이: 20         python java c++
-profile4("땡뚜", 21, "Kotlin", "", "")  # 빈 값을 매번 입력해주어야 하는 번거로움 발생
+profile4("땡뚜", 21, "Kotlin", "", "")  # 빈 값을 매번 입력해주어야 하는 번거로움 발생 (입력해주지 않으면 에러발생)
 
   # 가변인자를 쓸 때 -
 def profile5(name, age, *language):
@@ -147,7 +147,7 @@ profile5("좡즁", 25, "javascript", "C#")
 print() # 줄바꿈.
 
 
-# 전역 변수, 지역 변수
+### 전역 변수, 지역 변수
 
 gun = 10
 
@@ -199,7 +199,7 @@ weight = round(std_weight(height / 100, gender), 2)
 print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다".format(height, gender, weight))
 
 
-# 표준 입출력 
+### 표준 입출력 
 print("A", "B", sep=",") # sep은 둘 사이를 어떻게 처리할 지를 결정. # A,B
 print("A", "B", "C", sep=" vs ") # A vs B vs C
 
